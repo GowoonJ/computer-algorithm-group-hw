@@ -31,14 +31,12 @@ public class CalculatorApp extends JFrame implements ActionListener, Runnable {
 
     private void start(){
         // x 클릭 시 프로그램도 종료, Frame의 Layout : BorderLayout
-        JFrame frame = new JFrame("App");
+        JFrame frame = new JFrame("Calculator App");
         frame.setContentPane(new CalculatorApp().mainJPanel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
 
-        frame.setBackground(Color.LIGHT_GRAY);
         frame.setSize(800, 800);
-
         frame.setVisible(true);
     }
 
