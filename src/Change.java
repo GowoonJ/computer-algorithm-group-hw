@@ -1,9 +1,6 @@
 import java.util.*;
 
-
 public class Change {
-
-
 
     public static void main(String[] args) {
 
@@ -29,19 +26,11 @@ public class Change {
             }//거스름돈 구분하고 개수 카운트
             if(change-arr[i]<arr[i])
             {
-                System.out.println(arr[i]+"원은"+cnt+"장이 필요합니다");
+                System.out.println(arr[i]+"원은"+cnt+"개가 필요합니다");
             }//거스름돈이 화폐종류보다 작아진다면 갯수 출력
         }
 
-
-
-
-
     }
-
-
-
-
 
 
 }
