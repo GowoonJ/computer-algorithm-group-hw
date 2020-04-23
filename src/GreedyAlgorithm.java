@@ -1,16 +1,18 @@
 import java.util.*;
 
 public class GreedyAlgorithm {
+    private int item1 = 0;
+    private int item2 = 0;
+    private int item3 = 0;
 
-    public static void main(String[] args) {
-        moneyChange change =new moneyChange();
+    public GreedyAlgorithm(int item1, int item2, int item3){
+        this.item1 = item1;
+        this.item2 = item2;
+        this.item3 = item3;
     }
-}
 
-
-class  moneyChange{
-    moneyChange() {
-        Scanner sc=new Scanner(System.in);
+    public void moneyChange() {
+        Scanner sc = new Scanner(System.in);
         int sandwich = 7000;
         int burgerSet = 15000;
         int taco = 12000;

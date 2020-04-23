@@ -34,9 +34,9 @@ public class CalculatorApp extends JFrame implements ActionListener, Runnable {
         JFrame frame = new JFrame("Calculator App");
         frame.setContentPane(new CalculatorApp().mainJPanel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setResizable(true);
         frame.pack();
 
-        frame.setSize(800, 800);
         frame.setVisible(true);
     }
 
