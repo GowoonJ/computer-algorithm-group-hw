@@ -3,7 +3,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class CalculatorApp extends JFrame implements ActionListener, Runnable {
+public class CalculatorApp extends JFrame implements ActionListener {
     public JPanel mainJPanel;
     private JSpinner spinner2;
     private JSpinner spinner3;
@@ -40,18 +40,23 @@ public class CalculatorApp extends JFrame implements ActionListener, Runnable {
         frame.setVisible(true);
     }
 
+    private void setButtonLimit(){
+        SpinnerNumberModel spinnerModel = new SpinnerNumberModel(0, 0, 100, 1);
+        spinner1.setModel(spinnerModel);
+        spinner2.setModel(spinnerModel);
+        spinner3.setModel(spinnerModel);
+    }
+
     public static void main(String[] args){
         CalculatorApp client = new CalculatorApp();
         client.start();
+
+
+
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
-
-    }
-
-    @Override
-    public void run() {
 
     }
 }
