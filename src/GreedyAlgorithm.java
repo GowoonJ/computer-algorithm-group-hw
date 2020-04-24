@@ -24,10 +24,12 @@ class  moneychange{
         int money;
         money=sc.nextInt(); //가지고 있는돈
         int sum=price1+price2+price3;// 총가격
-        while(money<sum) {
-            System.out.println("금액 부족!");
-            money=sc.nextInt(); //금액 부족하면 다시 입력받기
-            if(money>sum){
+        while(money!=0) {
+            if(money<sum) {
+                System.out.println("금액 부족!");
+                money = sc.nextInt(); //금액 부족하면 다시 입력받기
+            }
+            else {
                 money=money-sum;//거스름돈 넣어줌
                 break;
             }
@@ -37,10 +39,7 @@ class  moneychange{
 
         int arr[]= {100,500,1000,5000,10000,50000};//지폐종류값 할당 배열 ex)1000원 50000원 등등등
         int name[]=new int[6];//"~~원은 ~~장이 필요합니다."-> 출력할때 ~~원 출력 담당 배열
-        for(int i=0;i<6;i++){
 
-            name[i]=arr[i];//출력할때 필요
-        }
 
         int cnt=0; //지폐,동전 개수 카운트 변수
         for(int i=5;i>=0;i--)//큰 화폐단위부터 봐줘야 하기 때문에 i를 n-1부터 줄어들게함
