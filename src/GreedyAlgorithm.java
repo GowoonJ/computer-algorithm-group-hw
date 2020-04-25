@@ -28,12 +28,12 @@ public class GreedyAlgorithm {
         price3 = taco*item3;          /* 샌드위치 , 버거세트 ,타코 구입 총 가격 */
 
         int sum = price1+price2+price3;// 총가격
-        while(money<sum) {
-//            System.out.println("금액 부족!");
-            isPay = false;
-
-            money = sc.nextInt(); //금액 부족하면 다시 입력받기
-            if(money > sum){
+        while(money!= 0) {
+            if(money<sum){
+                isPay = false;
+                money = sc.nextInt(); //금액 부족하면 다시 입력받기
+            }
+            else{
                 money = money-sum;//거스름돈 넣어줌
                 break;
             }
