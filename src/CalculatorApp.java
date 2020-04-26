@@ -14,9 +14,7 @@ public class CalculatorApp extends JFrame{
     private JButton buttonBuy;
     private JLabel count2Label;
     private JLabel count3Label;
-    private JPanel item1Panel;
-    private JPanel item3Panel;
-    private JPanel item2Panel;
+    private JPanel item1Panel, item3Panel, item2Panel;
     private JLabel count1Label;
     private JPanel calculateJPanel;
     private JLabel totalLabel;
@@ -24,12 +22,10 @@ public class CalculatorApp extends JFrame{
     private JLabel titleLabel;
     private JPanel titleJPanel;
     private JSpinner spinner1;
-    private JLabel imageLabel1;
-    private JLabel imageLabel3;
-    private JLabel imageLabel2;
+    private JLabel imageLabel1, imageLabel3, imageLabel2;
     private JTextField textFieldInput;
     private JButton inputButton;
-    private JTextArea 저희업소는모든제품을TextArea;
+    private JTextArea textArea;
 
     private int num1, num2, num3;
 
