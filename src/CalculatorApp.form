@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="CalculatorApp">
+  <grid id="27dc6" binding="mainJPanel" layout-manager="GridLayoutManager" row-count="5" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="40" left="40" bottom="40" right="40"/>
+    <constraints>
+      <xy x="20" y="20" width="795" height="656"/>
+    </constraints>
+    <properties>
+      <background color="-4268052"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="6f545" layout-manager="GridLayoutManager" row-count="2" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="10" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-3938825"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <vspacer id="c92b">
+            <constraints>
+              <grid row="0" column="4" row-span="2" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <grid id="10689" binding="item2Panel" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="0" column="2" row-span="2" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-3938825"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="7490a" class="javax.swing.JLabel" binding="count2Label">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Noto Sans CJK KR Regular" size="14"/>
+                  <foreground color="-12895429"/>
+                  <text value="수량"/>
+                </properties>
+              </component>
+              <vspacer id="6fa5e">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <component id="8873c" class="javax.swing.JSpinner" binding="spinner2" default-binding="true">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="33453" class="javax.swing.JLabel" binding="imageLabel2">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <icon value="images/taco.jpg"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="c208a" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Noto Sans CJK KR Light" size="14"/>
+                  <foreground color="-12895429"/>
+                  <text value="투쁠한우 타코 : 12000원"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="ebb60" binding="item3Panel" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="0" column="5" row-span="2" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-3938825"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="d1146" class="javax.swing.JLabel" binding="count3Label">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Noto Sans CJK KR Regular" size="14"/>
+                  <foreground color="-12895429"/>
+                  <text value="수량"/>
+                </properties>
+              </component>
+              <vspacer id="b6627">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <component id="db549" class="javax.swing.JSpinner" binding="spinner3" default-binding="true">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="449ca" class="javax.swing.JLabel" binding="imageLabel3">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <icon value="images/hamburger.jpg"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="1389b" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Noto Sans CJK KR Light" size="14"/>
+                  <foreground color="-12895429"/>
+                  <text value="한우 버거세트 : 15000원"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <vspacer id="3e3a3">
+            <constraints>
+              <grid row="0" column="1" row-span="2" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <grid id="b2e8" binding="item1Panel" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="0" column="0" row-span="2" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-3938825"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="569c2" class="javax.swing.JLabel" binding="count1Label">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Noto Sans CJK KR Medium" size="14"/>
+                  <foreground color="-12895429"/>
+                  <text value="수량"/>
+                </properties>
+              </component>
+              <vspacer id="259e7">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <component id="71cda" class="javax.swing.JSpinner" binding="spinner1">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="e5da8" class="javax.swing.JLabel" binding="imageLabel1">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <icon value="images/sandwich.jpg"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="fd03d" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Noto Sans CJK KR Light" size="14"/>
+                  <foreground color="-12895429"/>
+                  <text value="유기농 로메인 샌드위치 : 7000원"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="23eb5" binding="calculateJPanel" layout-manager="GridLayoutManager" row-count="2" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="10" left="10" bottom="10" right="10"/>
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-855600"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="fef0" class="javax.swing.JTextArea" binding="costArea">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="50"/>
+              </grid>
+            </constraints>
+            <properties>
+              <font name="Noto Sans Mono CJK KR Regular" size="14"/>
+            </properties>
+          </component>
+          <component id="fc7b0" class="javax.swing.JTextArea" binding="changeArea">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="2" vsize-policy="6" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="50"/>
+              </grid>
+            </constraints>
+            <properties>
+              <font name="Noto Sans CJK KR Regular" size="14"/>
+            </properties>
+          </component>
+          <component id="f9ed7" class="javax.swing.JButton" binding="buttonStart">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-14360"/>
+              <font name="Noto Sans CJK KR Medium" size="16" style="0"/>
+              <text value="보기"/>
+            </properties>
+          </component>
+          <component id="d5f93" class="javax.swing.JLabel" binding="totalLabel">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Noto Sans CJK KR Medium" size="18" style="0"/>
+              <foreground color="-12895429"/>
+              <text value="거스름 돈"/>
+            </properties>
+          </component>
+          <component id="8cc55" class="javax.swing.JLabel" binding="costLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Noto Sans CJK KR Medium" size="16" style="0"/>
+              <foreground color="-12895429"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <text value="음식 가격"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="9db53" binding="titleJPanel" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="24" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-4268052"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="46cfb" class="javax.swing.JLabel" binding="titleLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Noto Sans CJK KR Bold" size="22" style="1"/>
+              <foreground color="-1"/>
+              <text value="원하는 음식과 수량을 선택해주세요"/>
+            </properties>
+          </component>
+          <component id="36a07" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Noto Sans CJK KR Regular" size="16"/>
+              <foreground color="-1"/>
+              <text value="수량 선택 후 보기를 눌러주시면 총 음식 가격을 , 투입을 누르면 거스름 돈을 출력합니다"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="824ed" layout-manager="GridLayoutManager" row-count="2" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-3938825"/>
+          <foreground color="-4268052"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="f9aab" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="2" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Noto Sans CJK KR Bold" size="18"/>
+              <foreground color="-12895429"/>
+              <text value="투입 금액"/>
+            </properties>
+          </component>
+          <component id="314a8" class="javax.swing.JTextField" binding="textFieldInput">
+            <constraints>
+              <grid row="0" column="1" row-span="2" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <font name="Noto Sans CJK KR Medium" size="18"/>
+            </properties>
+          </component>
+          <component id="767c6" class="javax.swing.JButton" binding="inputButton">
+            <constraints>
+              <grid row="0" column="2" row-span="2" col-span="1" vsize-policy="0" hsize-policy="2" anchor="0" fill="1" indent="1" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-855600"/>
+              <font name="Noto Sans CJK KR Regular" size="16"/>
+              <text value="투입"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="ed955" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="30" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-4268052"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="c0f91" class="javax.swing.JTextArea" binding="textArea">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="2" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="50"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-4268052"/>
+              <font name="Noto Sans CJK KR Light" size="14"/>
+              <foreground color="-1"/>
+              <text value="저희 업소는 모든 제품을 국산 최고급 원료로만 생산하며 소비자의 건강을 유념한 청청 유기농 레시피를 적용하였습니다."/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
