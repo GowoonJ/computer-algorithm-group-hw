@@ -1,3 +1,4 @@
+import java.lang.reflect.Array;
 import java.util.*;
 
 public class GreedyAlgorithm {
@@ -6,35 +7,20 @@ public class GreedyAlgorithm {
     private int item3;
     private int money; // useful money input value
 
+    private ArrayList<Integer> costList = new ArrayList<>();
+
+    private int sum = 0;
 
     private boolean isPay = false;
 
-
-    public void setData(int itemSandwich, int itemBurger, int itemTaco){
-        this.item1 = itemSandwich;
-        this.item2 = itemBurger;
-        this.item3 = itemTaco;
-    }
-
     public void moneyChange() {
-        Scanner sc = new Scanner(System.in);
-        int sandwich = 7000;
-        int burgerSet = 15000;
-        int taco = 12000;
-        int price1,price2,price3;
-
-        price1 = sandwich*item1;
-        price2 = burgerSet*item2;
-        price3 = taco*item3;
-        /* 샌드위치 , 버거세트 ,타코 구입 총 가격 */
-        int sum = price1+price2+price3;
-        int money;
-        money=sc.nextInt(); //가지고 있는돈
+        int money = 0;
+//        money=sc.nextInt(); //가지고 있는돈
 
         while(true) {
             if(money<sum) {
                 System.out.println("금액 부족!");
-                money = sc.nextInt(); //금액 부족하면 다시 입력받기
+//                money = sc.nextInt(); //금액 부족하면 다시 입력받기
             }
             else{
                 money = money-sum;//거스름돈 넣어줌
