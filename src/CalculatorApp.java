@@ -36,9 +36,6 @@ public class CalculatorApp extends JFrame{
         frame.pack();
 
         setButtonLimit();
-
-        calculateTotalCost(0,0,0);
-
         buttonStart.addActionListener(e ->{
             num1 = (int) spinner1.getValue();
             num2 = (int) spinner2.getValue();
@@ -95,26 +92,19 @@ public class CalculatorApp extends JFrame{
         int burgerSet = 15000;
         int taco = 12000;
 
-        if (costArray.isEmpty()){
-            initSet();
+        if (!costArray.isEmpty()){
+            costArray.clear();
         }
 
-        costArray.set(0,sandwich*itemSandwich);
-        costArray.set(1,taco*itemTaco);
-        costArray.set(2,burgerSet*itemBurger);
+        costArray.add(0,sandwich*itemSandwich);
+        costArray.add(1,taco*itemTaco);
+        costArray.add(2,burgerSet*itemBurger);
 
         sum = 0;
         for (int i = 0 ; i<3 ; i++){
             sum = sum + costArray.get(i);
         }
-        costArray.set(3,sum);
-    }
-
-    private void initSet(){
-        costArray.add(0,0);
-        costArray.add(1,0);
-        costArray.add(2,0);
-        costArray.add(3,0);
+        costArray.add(3,sum);
     }
 
     private void setChangeArea(ArrayList<String> arrayList){
