@@ -1,20 +1,23 @@
 ## 2020 1학기 컴퓨터알고리즘 조별과제1
 
-#### Java Swing 이용하여 자판기 GUI 구현
+### Java Swing 이용하여 자판기 GUI 구현
 
-- ### 프로그램 구현
+#### 프로그램 구현
 
    각 제품들에 대한 값들을 할당하고 **Greedy Algorithm**(탐욕 알고리즘) 이용하여 지불 금액에 대한 거스름돈 알고리즘 구현한 뒤, 지폐 분류를 거친 결과를 출력한다
 
 - **GUI 형태는 피시방 음식 주문 서비스 참고**
 
+- 1. JSpinner를 이용하여 원하는 음식의 수량 체크 후 보기 버튼 클릭
+- 2. 책정된 음식의 총 금액을 보고 지불 금액 입력
+- 3. 투입 버튼 클릭 시 총 거스름 돈과 화폐개수가 나옵니다.
 
 
-- ### 코드 구현
+   #### 코드 구현
 
   
 
-  #### 1. **Greedy Algorithm** 
+   #### 1. **Greedy Algorithm** 
   ~~~~
      import java.util.*;
      
@@ -93,7 +96,7 @@
   1) Calculator App.java
   
         ~~~~
-      public class CalculatorApp extends JFrame{
+        public class CalculatorApp extends JFrame{
             private void start(){
                 JFrame frame = new JFrame("Calculator App");
                            frame.setContentPane(mainJPanel);
@@ -102,13 +105,14 @@
                            frame.pack();
                 frame.setVisible(true);
             }
-      }
+            
             public static void main(String[] args){
                 CalculatorApp client = new CalculatorApp();
                 client.start();
             }
-      }
+        }
         ~~~~
+      
       >JFrame 상속, 초기 설정
       >main 함수 내부에서 start() 호출하여 JFrame visible 로 실행
   
@@ -158,8 +162,8 @@
             }
 
   > 금액 지불 버튼을 눌렀을 때 입력한 금액이 지불해야하는 금액보다 낮은지 계산 후,
-    if문을 통과한다면 greedyAlgorithm의 getChangeCost 함수 호출
-    거스름돈 배열을 출력하는 setChangeArea() 함수에 ArrayList<String> 파라미터로 대입
+  > if문을 통과한다면 greedyAlgorithm의 getChangeCost 함수 호출
+  > 거스름돈 배열을 출력하는 setChangeArea() 함수에 ArrayList<String> 파라미터로 대입
     
    
   ~~~~
@@ -218,6 +222,7 @@
   ~~~~
   
   > - 거스름돈 출력 함수를 이용하여 (JTextArea)ChangeArea 에 출력
+  
   
 
 
