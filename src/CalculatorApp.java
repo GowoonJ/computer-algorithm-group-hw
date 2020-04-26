@@ -48,21 +48,31 @@ public class CalculatorApp extends JFrame{
         });
 
         inputButton.addActionListener(e->{
-            String money = textFieldInput.getText();
-            if (money.equals("")){
-                money = "0";
-            }
-            inputMoney = Integer.parseInt(money);
-
-            if (inputMoney != 0){
-                if ( greedyAlgorithm.getIsPay(inputMoney, costArray.get(3))){
-                    greedyAlgorithm.moneyChange();
-                    setChangeArea(greedyAlgorithm.getChangeCost());
-                }else{
-                    textFieldInput.setText("금액을 다시 입력해주세요");
-                }
+            if(costArray.isEmpty()||costArray.get(3)==0){
+                textFieldInput.setText("주문할 음식을 골라주세요");
             }else {
-                textFieldInput.setText("금액을 입력해주세요");
+                String money = textFieldInput.getText();
+                if (money.equals("")){
+                    money = "0";
+                }
+
+                try{
+                    inputMoney = Integer.parseInt(money);
+                    if (inputMoney != 0) {
+                        if (greedyAlgorithm.getIsPay(inputMoney, costArray.get(3))) {
+                            greedyAlgorithm.moneyChange();
+                            setChangeArea(greedyAlgorithm.getChangeCost());
+                        } else {
+                            textFieldInput.setText("금액을 다시 입력해주세요");
+                        }
+                    } else {
+                        textFieldInput.setText("금액을 입력해주세요");
+                    }
+
+                }catch(NumberFormatException exception){
+                    textFieldInput.setText("금액을 다시 입력해주세요");
+                    inputMoney = 0;
+                }
             }
         });
 
