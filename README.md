@@ -127,9 +127,9 @@
             spinner3.setModel(spinnerModel3);                                    
         }    
         ~~~~
-      > SpinnerModel 을 이용하여 초기값, 최저, 최대, 클릭 시 증가값 설정 후 spinner에 적용
       
-      **(고려사항)** 모든 스피너에 같은 SpinnerNumberModel 을 적용할 경우, 모든 spinner의 값이 동시 증가할 수 있음
+      > SpinnerModel 을 이용하여 초기값, 최저, 최대, 클릭 시 증가값 설정 후 spinner에 적용
+      > **(고려사항)** 모든 스피너에 같은 SpinnerNumberModel 을 적용할 경우, 모든 spinner의 값이 동시 증가할 수 있음
   
   3) 알고리즘 시행 전 GUI
   
@@ -161,6 +161,7 @@
             ...
             }
 
+ 
   > 금액 지불 버튼을 눌렀을 때 입력한 금액이 지불해야하는 금액보다 낮은지 계산 후,
   > if문을 통과한다면 greedyAlgorithm의 getChangeCost 함수 호출
   > 거스름돈 배열을 출력하는 setChangeArea() 함수에 ArrayList<String> 파라미터로 대입
@@ -199,10 +200,12 @@
         }
 
   ~~~~
-  > 위에 언급하였던 Greedy class 를 수정하여 
-  > - Scanner.in
-  > - System.out.println 메소드 삭제
-  > - parameter와 ArrayList<String> 으로 입출력 값 설정
+  
+   앞서 언급하였던 Greedy class 를 수정하여 
+   - Scanner.in
+   - System.out.println 메소드 삭제
+   - parameter와 ArrayList<String> 으로 입출력 값 설정
+   
  
   ~~~~
     private void setChangeArea(ArrayList<String> arrayList){
@@ -221,7 +224,7 @@
     }
   ~~~~
   
-  > - 거스름돈 출력 함수를 이용하여 (JTextArea)ChangeArea 에 출력
+  - 거스름돈 출력 함수를 이용하여 (JTextArea)ChangeArea 에 출력
   
   
 
