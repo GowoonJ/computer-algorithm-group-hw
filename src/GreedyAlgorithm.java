@@ -5,7 +5,7 @@ public class GreedyAlgorithm {
 
     private ArrayList<String> changeArray = new ArrayList<>();
 
-    public void moneyChange() {
+    void moneyChange() {
         int[] arr = {10, 50, 100, 500, 1000, 5000, 10000, 50000};//지폐종류값 할당 배열 ex)1000원 50000원 등등등
 
         int cnt; //지폐,동전 개수 카운트 변수
