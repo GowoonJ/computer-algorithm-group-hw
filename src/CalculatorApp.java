@@ -22,13 +22,10 @@ public class CalculatorApp extends JFrame{
     private int num1, num2, num3, inputMoney, sum;
 
     private ArrayList<Integer> costArray = new ArrayList<>(3);
-
     private GreedyAlgorithm greedyAlgorithm = new GreedyAlgorithm();
 
     // JFrame 이용
-
     private void start(){
-        // x 클릭 시 프로그램도 종료, Frame의 Layout : BorderLayout
         JFrame frame = new JFrame("Calculator App");
         frame.setContentPane(mainJPanel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
