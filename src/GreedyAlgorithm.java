@@ -6,14 +6,14 @@ public class GreedyAlgorithm {
     private int item3;
     private int money; // useful money input value
 
+
     private boolean isPay = false;
 
 
-    public GreedyAlgorithm(int itemSandwich, int itemBurger, int itemTaco, int money){
+    public void setData(int itemSandwich, int itemBurger, int itemTaco){
         this.item1 = itemSandwich;
         this.item2 = itemBurger;
         this.item3 = itemTaco;
-        this.money = money;
     }
 
     public void moneyChange() {
@@ -40,7 +40,6 @@ public class GreedyAlgorithm {
         }
 
         int[] arr= {100,500,1000,5000,10000,50000};//지폐종류값 할당 배열 ex)1000원 50000원 등등등
-        int[] name = new int[6];//"~~원은 ~~장이 필요합니다."-> 출력할때 ~~원 출력 담당 배열
 
         int cnt; //지폐,동전 개수 카운트 변수
         for(int i = arr.length-1 ; i>=0 ; i--){ //큰 화폐단위부터 봐줘야 하기 때문에 i를 n-1부터 줄어들게함

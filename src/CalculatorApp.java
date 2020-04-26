@@ -26,22 +26,38 @@ public class CalculatorApp extends JFrame implements ActionListener {
     private JLabel imageLabel1;
     private JLabel imageLabel3;
     private JLabel imageLabel2;
+    private JTextField textFieldInput;
+    private JButton 투입Button;
+
+    int num1, num2, num3;
+
+    public GreedyAlgorithm greedyAlgorithm = new GreedyAlgorithm();
 
     // JFrame 이용
 
     private void start(){
         // x 클릭 시 프로그램도 종료, Frame의 Layout : BorderLayout
         JFrame frame = new JFrame("Calculator App");
-        frame.setContentPane(new CalculatorApp().mainJPanel);
+        frame.setContentPane(mainJPanel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setResizable(true);
         frame.pack();
+
+        setButtonLimit();
+
+        buttonStart.addActionListener(e ->{
+            num1 = (int) spinner1.getValue();
+            num2 = (int) spinner2.getValue();
+            num3 = (int) spinner3.getValue();
+
+
+
+        });
 
         frame.setVisible(true);
     }
 
     private void setButtonLimit(){
-        SpinnerNumberModel spinnerModel = new SpinnerNumberModel(0, 0, 100, 1);
+        SpinnerModel spinnerModel = new SpinnerNumberModel(0, 0, 100, 1);
         spinner1.setModel(spinnerModel);
         spinner2.setModel(spinnerModel);
         spinner3.setModel(spinnerModel);
@@ -50,9 +66,6 @@ public class CalculatorApp extends JFrame implements ActionListener {
     public static void main(String[] args){
         CalculatorApp client = new CalculatorApp();
         client.start();
-
-
-
     }
 
     @Override
