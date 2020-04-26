@@ -50,7 +50,6 @@ public class CalculatorApp extends JFrame implements ActionListener {
             num3 = (int) spinner3.getValue();
 
 
-
         });
 
         frame.setVisible(true);
