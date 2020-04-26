@@ -6,17 +6,23 @@ import java.util.ArrayList;
 
 public class CalculatorApp extends JFrame{
     public JPanel mainJPanel;
-    private JSpinner spinner2;
-    private JSpinner spinner3;
+    private JSpinner spinner1, spinner2, spinner3;
     private JTextArea costArea;
     private JTextArea changeArea;
     private JButton buttonStart;
-    private JSpinner spinner1;
+    private JLabel count2Label, count3Label, count1Label;
+    private JPanel item1Panel, item3Panel, item2Panel;
+    private JPanel calculateJPanel, titleJPanel;
+    private JLabel totalLabel, costLabel, titleLabel;
+    private JLabel imageLabel1, imageLabel3, imageLabel2;
     private JTextField textFieldInput;
     private JButton inputButton;
+    private JTextArea textArea;
 
     private int num1, num2, num3, inputMoney, sum;
+
     private ArrayList<Integer> costArray = new ArrayList<>(3);
+
     private GreedyAlgorithm greedyAlgorithm = new GreedyAlgorithm();
 
     // JFrame 이용
