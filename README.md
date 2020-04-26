@@ -133,6 +133,16 @@
   
   3) 알고리즘 시행 전 GUI
   
+  초기 화면
+  ![initGUI](src/images/CalcultorApp_init.jpg)
+  
+  입력한 금액이 없을 경우 예외 처리
+  ![initGUI](src/images/CalcultorApp_no_input_money.jpg)
+  
+  선택한 음식이 없을 경우 예외 처리
+  ![initGUI](src/images/CalcultorApp_no_input.jpg)
+    
+  
   #### 3. Greedy + GUI
     
             private GreedyAlgorithm greedyAlgorithm = new GreedyAlgorithm();
@@ -226,6 +236,9 @@
   
   - 거스름돈 출력 함수를 이용하여 (JTextArea)ChangeArea 에 출력
   
+  - 최종 화면
+    ![initGUI](src/images/CalcultorApp_Result.jpg)
+    
   
 
 
