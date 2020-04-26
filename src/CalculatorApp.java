@@ -11,27 +11,13 @@ public class CalculatorApp extends JFrame{
     private JTextArea costArea;
     private JTextArea changeArea;
     private JButton buttonStart;
-    private JButton buttonBuy;
-    private JLabel count2Label;
-    private JLabel count3Label;
-    private JPanel item1Panel, item3Panel, item2Panel;
-    private JLabel count1Label;
-    private JPanel calculateJPanel;
-    private JLabel totalLabel;
-    private JLabel costLabel;
-    private JLabel titleLabel;
-    private JPanel titleJPanel;
     private JSpinner spinner1;
-    private JLabel imageLabel1, imageLabel3, imageLabel2;
     private JTextField textFieldInput;
     private JButton inputButton;
-    private JTextArea textArea;
 
-    private int num1, num2, num3;
-
-    ArrayList<Integer> costArray = new ArrayList<>(3);
-
-    public GreedyAlgorithm greedyAlgorithm = new GreedyAlgorithm();
+    private int num1, num2, num3, inputMoney, sum;
+    private ArrayList<Integer> costArray = new ArrayList<>(3);
+    private GreedyAlgorithm greedyAlgorithm = new GreedyAlgorithm();
 
     // JFrame 이용
 
@@ -40,6 +26,7 @@ public class CalculatorApp extends JFrame{
         JFrame frame = new JFrame("Calculator App");
         frame.setContentPane(mainJPanel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setResizable(true);
         frame.pack();
 
         setButtonLimit();
@@ -60,7 +47,24 @@ public class CalculatorApp extends JFrame{
             );
         });
 
+        inputButton.addActionListener(e->{
+            String money = textFieldInput.getText();
+            if (money.equals("")){
+                money = "0";
+            }
+            inputMoney = Integer.parseInt(money);
 
+            if (inputMoney != 0){
+                if ( greedyAlgorithm.getIsPay(inputMoney, costArray.get(3))){
+                    greedyAlgorithm.moneyChange();
+                    setChangeArea(greedyAlgorithm.getChangeCost());
+                }else{
+                    textFieldInput.setText("금액을 다시 입력해주세요");
+                }
+            }else {
+                textFieldInput.setText("금액을 입력해주세요");
+            }
+        });
 
         frame.setVisible(true);
     }
@@ -93,7 +97,7 @@ public class CalculatorApp extends JFrame{
         costArray.set(1,taco*itemTaco);
         costArray.set(2,burgerSet*itemBurger);
 
-        int sum= 0;
+        sum = 0;
         for (int i = 0 ; i<3 ; i++){
             sum = sum + costArray.get(i);
         }
@@ -105,6 +109,15 @@ public class CalculatorApp extends JFrame{
         costArray.add(1,0);
         costArray.add(2,0);
         costArray.add(3,0);
+    }
+
+    private void setChangeArea(ArrayList<String> arrayList){
+        String changeOutput = "거스름 돈은\t 총 "+(inputMoney-sum)+ "원\n";
+        for(int i = 0 ; i<arrayList.size()-1; i++){
+            changeOutput = changeOutput + arrayList.get(i) +"\n";
+        }
+        changeOutput = changeOutput + arrayList.get(arrayList.size()-1) +"가 나옵니다";
+        changeArea.setText(changeOutput);
     }
 }
 
